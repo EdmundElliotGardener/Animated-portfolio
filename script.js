@@ -1,7 +1,14 @@
-var typed = new Typed(".multiple-text", {
-    String: ["Frontend Developer", "Youtuber", "Blogger"],
-    typedSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop:true
-})
+// var typed = new Typed(".multiple-text", {
+//   strings: ["Frontend Developer", "Youtuber", "Blogger"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   backDelay: 1000,
+//   loop: true,
+// });
+var typed = new Typed("..multiple-text", {
+  strings: ["Frontend Developer.", "Youtuber.", "Blogger"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});

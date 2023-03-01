@@ -37,11 +37,11 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 90px;
-  display: inline-flex;
+  margin-left: 45rem;
+  display: flex;
   transform: 0.3s;
-  justify-content: flex-start;
-  width: 5rem;
+  justify-content: space-between;
+  width: 25rem;
 }
 
 .navbar a {
@@ -49,7 +49,6 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 50px;
   display: inline-flex;
   transform: 0.3s;
   width: 5rem;
@@ -104,9 +103,9 @@ body {
 .home-img img {
   max-width: 450px;
   margin-right: -20px;
-  /* opacity: 0; */
-  animation: zoomIn 1s ease forwards;
-  animation-delay: 2s;
+  opacity: 0;
+  animation: zoomIn 2s ease forwards,floatImage 4s ease-in-out infinite;
+  animation-delay: 2s 3s;
 }
 .social-media a {
   display: inline-flex;
@@ -190,11 +189,22 @@ body {
 }
 @keyframes zoomIn {
   0% {
-    transform: scale(0);
+    transform: scale(100);
     opacity: 0;
   }
   100% {
-    transform: scale(0);
+    transform: scale(1);
     opacity: 1;
   }
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+     50%{
+        transform: translateY(-24px);
+    }
+     100%{
+        transform: translateY(0);
+    }
 }
