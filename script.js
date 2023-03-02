@@ -5,7 +5,7 @@
 //   backDelay: 1000,
 //   loop: true,
 // });
-var typed = new Typed("..multiple-text", {
+var typed = new typed("..multiple-text", {
   strings: ["Frontend Developer.", "Youtuber.", "Blogger"],
   typeSpeed: 100,
   backSpeed: 100,
