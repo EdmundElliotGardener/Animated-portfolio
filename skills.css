@@ -2,12 +2,66 @@
 body{
     background-color: #000000
 }
-
-
-
 * {box-sizing:border-box}
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 20px 10px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /* margin-left: 50px; */
+}
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  /* animation: slideRight 0.1s ease forwards; */
+}
+.navbar {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 45rem;
+  display: flex;
+  transform: 0.3s;
+  justify-content: space-between;
+  width: 25rem;
+}
 
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  transform: 0.3s;
+  width: 5rem;
+  /* animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i)); */
+}
 
+.navbar a:hover,
+.navbar a.active {
+  color: #0ef;
+}
+.skills-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #060606;
+  color: white;
+}
+.skills-section h1:hover{
+    color: #0ef;
+}
 .container {
   width: 100%; 
   background-color: #ddd; 
@@ -21,10 +75,11 @@ body{
   display: flex;
   transform: 0.3s;
   width: 25rem;
-  text-align: flex-start;
+  text-align: center;
+  left: 2rem;
 }
 .profession p:hover{
-    color:aquamarine;
+    color:#0ef;
 }
 .chart-container {
   display: flex;
@@ -32,7 +87,7 @@ body{
   align-items: flex-end;
   height: 300px;
   width: 100%;
-  background-color: #0ef;
+  color: #0ef;
   padding: 20px;
   text-align:  center;
   color: #fff;
@@ -42,7 +97,7 @@ body{
 
 .bar {
   width: 20%;
-  background-color: #008080;
+  background-color: #0be8e8;
   transition: height 0.5s ease-in-out;
   height: 50px;
 }

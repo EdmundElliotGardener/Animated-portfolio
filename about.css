@@ -6,8 +6,57 @@ body {
 
 html {
   box-sizing: border-box;
+}.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100px;
+  padding: 20px 10px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /* margin-left: 50px; */
+}
+.logo {
+ 
+    font-size: 25px;
+    color: #af1919;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 0.1s ease forwards;
+}
+.navbar {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 45rem;
+  display: flex;
+  transform: 0.3s;
+  justify-content: space-between;
+  width: 25rem;
 }
 
+.navbar a {
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  transform: 0.3s;
+  width: 5rem;
+  /* animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i)); */
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #0ef;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
